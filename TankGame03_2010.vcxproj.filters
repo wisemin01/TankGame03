@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns:atg="http://atg.xbox.com" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="01. ENGINE">
+      <UniqueIdentifier>{053afa9f-cb0a-4e4a-886e-4709f905c1eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. ENGINE\Managers">
+      <UniqueIdentifier>{1f4b26e2-59a1-4d07-a2b4-eae55712b7f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. ENGINE\Managers\SceneManager">
+      <UniqueIdentifier>{0f360f7d-4d29-40a4-9ef5-15558efabc43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. ENGINE\Resource Files">
+      <UniqueIdentifier>{8e114980-c1a3-4ada-ad7c-83caadf5daeb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="01. ENGINE\Shaders">
+      <UniqueIdentifier>{2c3d4c8c-5d1a-459a-a05a-a4e4b608a44e}</UniqueIdentifier>
+      <Extensions>fx;fxh;hlsl</Extensions>
+    </Filter>
+    <Filter Include="01. ENGINE\DXUT">
+      <UniqueIdentifier>{a43c5c25-0e86-4a20-b64a-883785ff74fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. ENGINE\Object">
+      <UniqueIdentifier>{e998b317-82dd-490f-902a-6b1aacbca31e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. ENGINE\Object\Scene">
+      <UniqueIdentifier>{538eae57-1a2c-4d87-930a-01a483d7f667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME">
+      <UniqueIdentifier>{f9cd3731-a13d-4477-b638-a1244f853edb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Maingame">
+      <UniqueIdentifier>{3e3821b9-40ad-4180-92f6-1fd0c0848381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. ENGINE\Managers\ResourceManager">
+      <UniqueIdentifier>{fa357311-3f53-45d5-aaa1-eac6b56bbc7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. ENGINE\Object\Texture">
+      <UniqueIdentifier>{22b936b0-8cdc-400d-9815-fb5345bb57d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. ENGINE\Managers\InputManager">
+      <UniqueIdentifier>{c356a156-0263-4f0e-a2a3-dea8d98dcb1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. ENGINE\Managers\ObjectManager">
+      <UniqueIdentifier>{04836997-aa5d-4f40-8b6b-4ab52ff6a6bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. ENGINE\Object\GameObject">
+      <UniqueIdentifier>{89205b1d-774f-4c48-ab88-a4cda3b632a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. ENGINE\Managers\CameraManager">
+      <UniqueIdentifier>{db81c073-009d-4694-aec8-d7d8479a1cd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. ENGINE\Object\Sound">
+      <UniqueIdentifier>{8e7a2e11-32c6-4473-9629-09402f2b31f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Scenes">
+      <UniqueIdentifier>{f0d1b8ce-f356-43a0-a3e7-c7ea6967790b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Scenes\01. Intro">
+      <UniqueIdentifier>{c5ab9c07-ed97-4126-b302-ba75fb365d6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Scenes\02. Title">
+      <UniqueIdentifier>{fd21f0a5-b9d1-4937-b89e-41755c6f9ff2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Scenes\03. Stage">
+      <UniqueIdentifier>{40b45687-b33c-4188-b5fa-fb67acb8deb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Scenes\04. Ending">
+      <UniqueIdentifier>{d164cdd1-ed34-46cc-b0f3-bc173e612f00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Objects">
+      <UniqueIdentifier>{e8357a47-241f-46f4-858a-9f4c0431db52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. ENGINE\Managers\CollisionManager">
+      <UniqueIdentifier>{43472ac1-9ec7-4907-9585-ca0e4a2b0f27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. CORE HEADERS">
+      <UniqueIdentifier>{42f2036a-628f-481d-bf55-8899e89ccb58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Objects\Map">
+      <UniqueIdentifier>{e99161dd-cc1a-4916-a275-3a9cd58aac46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. ENGINE\Object\ItemInfo">
+      <UniqueIdentifier>{7f4c5138-e183-4b78-937d-15f622012533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Objects\Map\Water">
+      <UniqueIdentifier>{bf12b871-85e3-4829-9b75-9e4433f9a844}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Objects\Map\Volcano">
+      <UniqueIdentifier>{7977b0e1-86ec-47e0-91c0-b82df54db823}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Objects\Explode">
+      <UniqueIdentifier>{a564161e-5111-4415-9b5d-4709ce12905b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. ASQRUFGEID">
+      <UniqueIdentifier>{a3865952-d45f-42c7-8959-d3605d22f1bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. ENGINE\Component">
+      <UniqueIdentifier>{07f07a13-37f2-49be-afa1-091cc7244d57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. ENGINE\Component\List">
+      <UniqueIdentifier>{46360730-5908-4262-aaba-d7842c139444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Objects\ScaleEffect">
+      <UniqueIdentifier>{a19e2449-8e50-444c-bd98-10c9d438984a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Objects\Fade">
+      <UniqueIdentifier>{b6efb1ca-8864-4b60-8dfb-307c9e46aa16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Objects\Cursor">
+      <UniqueIdentifier>{22c3087d-aa5b-45d8-acf1-446e83c115ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Objects\Bullet">
+      <UniqueIdentifier>{c70ac6a0-ef67-4b3b-a167-f9175d90ad57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Objects\Controller">
+      <UniqueIdentifier>{576247f7-27a8-4018-ad8d-ddc52a1d1b0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Objects\Enemy">
+      <UniqueIdentifier>{ebc08158-4259-4b4d-afc9-98f14c150427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Objects\Item">
+      <UniqueIdentifier>{eb9a5c22-20d2-4d10-9e1a-32f452430ed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Objects\Player">
+      <UniqueIdentifier>{ca256b42-5704-433e-9a33-340c75996028}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Objects\Portal">
+      <UniqueIdentifier>{9691c1fa-d89e-4201-bc8c-68d6d780b65f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Objects\SavePoint">
+      <UniqueIdentifier>{dd8ba0c7-48ea-4193-abaf-37b4b9fc6ac0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Objects\Product">
+      <UniqueIdentifier>{dd1beaa5-58ee-4f48-b3d2-ef1bb18b71a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GAME\Scenes\Loading">
+      <UniqueIdentifier>{f6b02b1a-da68-4452-a1ef-6bf892079cfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. ENGINE\Managers\FileManager">
+      <UniqueIdentifier>{cccf5e80-e87f-4409-a538-e2a27b3c3781}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DXUT\Optional\directx.ico">
+      <Filter>01. ENGINE\Resource Files</Filter>
+    </None>
+    <ClInclude Include="DXUT\Core\DXUT.h">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTenum.h">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTmisc.h">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Core\DXUT.cpp">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTenum.cpp">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTmisc.cpp">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClCompile>
+    <ClInclude Include="DXUT\Optional\DXUTcamera.h">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTgui.h">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTres.h">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTsettingsdlg.h">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmesh.h">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmisc.h">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClInclude>
+    <ClCompile Include="DXUT\Optional\DXUTcamera.cpp">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTgui.cpp">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTres.cpp">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTsettingsdlg.cpp">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmesh.cpp">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmisc.cpp">
+      <Filter>01. ENGINE\DXUT</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>01. ENGINE\Managers\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>01. ENGINE\Object\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Maingame.cpp">
+      <Filter>02. GAME\Maingame</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>01. ENGINE\Managers\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>01. ENGINE\Object\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>01. ENGINE\Managers\InputManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>01. ENGINE\Managers\ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>01. ENGINE\Object\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>01. ENGINE\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraManager.cpp">
+      <Filter>01. ENGINE\Managers\CameraManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>01. ENGINE\Component\List</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKsound.cpp">
+      <Filter>01. ENGINE\Object\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKwavefile.cpp">
+      <Filter>01. ENGINE\Object\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>01. ENGINE\Component\List</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>01. ENGINE\Component\List</Filter>
+    </ClCompile>
+    <ClCompile Include="Rigidbody.cpp">
+      <Filter>01. ENGINE\Component\List</Filter>
+    </ClCompile>
+    <ClCompile Include="Life.cpp">
+      <Filter>01. ENGINE\Component\List</Filter>
+    </ClCompile>
+    <ClCompile Include="IntroScene.cpp">
+      <Filter>02. GAME\Scenes\01. Intro</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>02. GAME\Scenes\02. Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage1Scene.cpp">
+      <Filter>02. GAME\Scenes\03. Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>02. GAME\Objects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>01. ENGINE\Managers\CollisionManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage2Scene.cpp">
+      <Filter>02. GAME\Scenes\03. Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollMap.cpp">
+      <Filter>02. GAME\Objects\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Ground.cpp">
+      <Filter>02. GAME\Objects\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="TopCannon.cpp">
+      <Filter>02. GAME\Objects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Cannon.cpp">
+      <Filter>02. GAME\Objects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemInfo.cpp">
+      <Filter>01. ENGINE\Object\ItemInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>02. GAME\Objects\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Water.cpp">
+      <Filter>02. GAME\Objects\Map\Water</Filter>
+    </ClCompile>
+    <ClCompile Include="Volcano.cpp">
+      <Filter>02. GAME\Objects\Map\Volcano</Filter>
+    </ClCompile>
+    <ClCompile Include="Meteor.cpp">
+      <Filter>02. GAME\Objects\Map\Volcano</Filter>
+    </ClCompile>
+    <ClCompile Include="Mine.cpp">
+      <Filter>02. GAME\Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Explode.cpp">
+      <Filter>02. GAME\Objects\Explode</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>02. GAME\Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyController.cpp">
+      <Filter>02. GAME\Objects\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerController.cpp">
+      <Filter>02. GAME\Objects\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="TankGame03.cpp">
+      <Filter>02. GAME</Filter>
+    </ClCompile>
+    <ClCompile Include="Nuclear.cpp">
+      <Filter>02. GAME\Objects\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="SavePoint.cpp">
+      <Filter>02. GAME\Objects\SavePoint</Filter>
+    </ClCompile>
+    <ClCompile Include="ScaleEffect.cpp">
+      <Filter>02. GAME\Objects\ScaleEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Portal.cpp">
+      <Filter>02. GAME\Objects\Portal</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>02. GAME\Objects\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Fade.cpp">
+      <Filter>02. GAME\Objects\Fade</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator.cpp">
+      <Filter>02. GAME\Objects\Product</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>02. GAME\Objects\Product</Filter>
+    </ClCompile>
+    <ClCompile Include="Fluffy.cpp">
+      <Filter>02. GAME\Objects\Product</Filter>
+    </ClCompile>
+    <ClCompile Include="Screen.cpp">
+      <Filter>02. GAME\Objects\Product</Filter>
+    </ClCompile>
+    <ClCompile Include="BadEnding.cpp">
+      <Filter>02. GAME\Scenes\04. Ending</Filter>
+    </ClCompile>
+    <ClCompile Include="HappyEnding.cpp">
+      <Filter>02. GAME\Scenes\04. Ending</Filter>
+    </ClCompile>
+    <ClCompile Include="Cursor.cpp">
+      <Filter>02. GAME\Objects\Cursor</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManager.cpp">
+      <Filter>01. ENGINE\Managers\FileManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreInput.cpp">
+      <Filter>02. GAME\Objects\Product</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreScreen.cpp">
+      <Filter>02. GAME\Objects\Product</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadScene.cpp">
+      <Filter>02. GAME\Scenes\Loading</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h">
+      <Filter>01. ENGINE\Resource Files</Filter>
+    </CLInclude>
+    <ResourceCompile Include="TankGame03.rc">
+      <Filter>01. ENGINE\Resource Files</Filter>
+    </ResourceCompile>
+    <ClInclude Include="SceneManager.h">
+      <Filter>01. ENGINE\Managers\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>01. ENGINE\Object\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Maingame.h">
+      <Filter>02. GAME\Maingame</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>01. ENGINE\Managers\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>01. ENGINE\Object\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>01. ENGINE\Managers\InputManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>01. ENGINE\Managers\ObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>01. ENGINE\Object\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>01. ENGINE\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraManager.h">
+      <Filter>01. ENGINE\Managers\CameraManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>01. ENGINE\Component\List</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKsound.h">
+      <Filter>01. ENGINE\Object\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKwavefile.h">
+      <Filter>01. ENGINE\Object\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>01. ENGINE\Component\List</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>01. ENGINE\Component\List</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigidbody.h">
+      <Filter>01. ENGINE\Component\List</Filter>
+    </ClInclude>
+    <ClInclude Include="Life.h">
+      <Filter>01. ENGINE\Component\List</Filter>
+    </ClInclude>
+    <ClInclude Include="IntroScene.h">
+      <Filter>02. GAME\Scenes\01. Intro</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
+      <Filter>02. GAME\Scenes\02. Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage1Scene.h">
+      <Filter>02. GAME\Scenes\03. Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>02. GAME\Objects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>01. ENGINE\Managers\CollisionManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage2Scene.h">
+      <Filter>02. GAME\Scenes\03. Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Uill.h">
+      <Filter>00. CORE HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.h">
+      <Filter>00. CORE HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager.h">
+      <Filter>00. CORE HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="sfdafx.h">
+      <Filter>00. CORE HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>00. CORE HEADERS</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollMap.h">
+      <Filter>02. GAME\Objects\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Ground.h">
+      <Filter>02. GAME\Objects\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="TopCannon.h">
+      <Filter>02. GAME\Objects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Cannon.h">
+      <Filter>02. GAME\Objects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemInfo.h">
+      <Filter>01. ENGINE\Object\ItemInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>02. GAME\Objects\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Water.h">
+      <Filter>02. GAME\Objects\Map\Water</Filter>
+    </ClInclude>
+    <ClInclude Include="Volcano.h">
+      <Filter>02. GAME\Objects\Map\Volcano</Filter>
+    </ClInclude>
+    <ClInclude Include="Meteor.h">
+      <Filter>02. GAME\Objects\Map\Volcano</Filter>
+    </ClInclude>
+    <ClInclude Include="Mine.h">
+      <Filter>02. GAME\Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Explode.h">
+      <Filter>02. GAME\Objects\Explode</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>02. GAME\Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyController.h">
+      <Filter>02. GAME\Objects\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerController.h">
+      <Filter>02. GAME\Objects\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Nuclear.h">
+      <Filter>02. GAME\Objects\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="SavePoint.h">
+      <Filter>02. GAME\Objects\SavePoint</Filter>
+    </ClInclude>
+    <ClInclude Include="ScaleEffect.h">
+      <Filter>02. GAME\Objects\ScaleEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Portal.h">
+      <Filter>02. GAME\Objects\Portal</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>02. GAME\Objects\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Fade.h">
+      <Filter>02. GAME\Objects\Fade</Filter>
+    </ClInclude>
+    <ClInclude Include="Animator.h">
+      <Filter>02. GAME\Objects\Product</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>02. GAME\Objects\Product</Filter>
+    </ClInclude>
+    <ClInclude Include="Fluffy.h">
+      <Filter>02. GAME\Objects\Product</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.h">
+      <Filter>02. GAME\Objects\Product</Filter>
+    </ClInclude>
+    <ClInclude Include="BadEnding.h">
+      <Filter>02. GAME\Scenes\04. Ending</Filter>
+    </ClInclude>
+    <ClInclude Include="HappyEnding.h">
+      <Filter>02. GAME\Scenes\04. Ending</Filter>
+    </ClInclude>
+    <ClInclude Include="Cursor.h">
+      <Filter>02. GAME\Objects\Cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager.h">
+      <Filter>01. ENGINE\Managers\FileManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreInput.h">
+      <Filter>02. GAME\Objects\Product</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreScreen.h">
+      <Filter>02. GAME\Objects\Product</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadScene.h">
+      <Filter>02. GAME\Scenes\Loading</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Win32">
+      <Configuration>Profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>TankGame03</ProjectName>
+    <ProjectGuid>{D3D09108-96D0-4629-88B8-122C0256058C}</ProjectGuid>
+    <RootNamespace>TankGame03</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|X64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|X64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x64;$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x64;$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|X64'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <ExecutablePath>$(DXSDK_DIR)Utilities\bin\x64;$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>DXUT\Core;DXUT\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DEBUG;PROFILE;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>DXUT.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3dx10d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>true</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|X64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>DXUT\Core;DXUT\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DEBUG;PROFILE;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>DXUT.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3dx10d.lib;d3dx9d.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>true</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>DXUT\Core;DXUT\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>DXUT.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3dx10.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>true</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>DXUT\Core;DXUT\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>DXUT.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3dx10.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>true</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>DXUT\Core;DXUT\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PROFILE;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>DXUT.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3dx10.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>true</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|X64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>DXUT\Core;DXUT\Optional;%(AdditionalIncludeDirectories)
+      </AdditionalIncludeDirectories>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;PROFILE;_WINDOWS;D3DXFX_LARGEADDRESS_HANDLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>DXUT.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>d3dx10.lib;d3dx9.lib;dxerr.lib;dxguid.lib;winmm.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <TargetMachine>MachineX64</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <DelayLoadDLLs>%(DelayLoadDLLs)</DelayLoadDLLs>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>true</EnableDPIAwareness>
+    </Manifest>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Animator.cpp" />
+    <ClCompile Include="BadEnding.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CameraManager.cpp" />
+    <ClCompile Include="Cannon.cpp" />
+    <ClCompile Include="Collider.cpp" />
+    <ClCompile Include="CollisionManager.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="Cursor.cpp" />
+    <ClCompile Include="DXUT\Optional\SDKsound.cpp" />
+    <ClCompile Include="DXUT\Optional\SDKwavefile.cpp" />
+    <ClCompile Include="HappyEnding.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="EnemyController.cpp" />
+    <ClCompile Include="Explode.cpp" />
+    <ClCompile Include="Fade.cpp" />
+    <ClCompile Include="Fluffy.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Ground.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="IntroScene.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="ItemInfo.cpp" />
+    <ClCompile Include="Life.cpp" />
+    <ClCompile Include="LoadScene.cpp" />
+    <ClCompile Include="Meteor.cpp" />
+    <ClCompile Include="Mine.cpp" />
+    <ClCompile Include="Nuclear.cpp" />
+    <ClCompile Include="ObjectManager.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerController.cpp" />
+    <ClCompile Include="Portal.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="Rigidbody.cpp" />
+    <ClCompile Include="SavePoint.cpp" />
+    <ClCompile Include="ScaleEffect.cpp" />
+    <ClCompile Include="ScoreInput.cpp" />
+    <ClCompile Include="ScoreScreen.cpp" />
+    <ClCompile Include="Screen.cpp" />
+    <ClCompile Include="ScrollMap.cpp" />
+    <ClCompile Include="FileManager.cpp" />
+    <ClCompile Include="Stage1Scene.cpp" />
+    <ClCompile Include="Stage2Scene.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TitleScene.cpp" />
+    <ClCompile Include="TopCannon.cpp" />
+    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="Volcano.cpp" />
+    <ClCompile Include="Water.cpp" />
+    <ClInclude Include="Animator.h" />
+    <ClInclude Include="BadEnding.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="CameraManager.h" />
+    <ClInclude Include="Cannon.h" />
+    <ClInclude Include="Collider.h" />
+    <ClInclude Include="CollisionManager.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="Cursor.h" />
+    <ClInclude Include="DXUT\Optional\SDKsound.h" />
+    <ClInclude Include="DXUT\Optional\SDKwavefile.h" />
+    <ClInclude Include="HappyEnding.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="EnemyController.h" />
+    <ClInclude Include="Enum.h" />
+    <ClInclude Include="Explode.h" />
+    <ClInclude Include="Fade.h" />
+    <ClInclude Include="Fluffy.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Ground.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="IntroScene.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="Life.h" />
+    <ClInclude Include="LoadScene.h" />
+    <ClInclude Include="Maingame.h" />
+    <ClInclude Include="Manager.h" />
+    <ClInclude Include="Meteor.h" />
+    <ClInclude Include="Mine.h" />
+    <ClInclude Include="Nuclear.h" />
+    <ClInclude Include="ObjectManager.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerController.h" />
+    <ClInclude Include="Portal.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="Rigidbody.h" />
+    <ClInclude Include="SavePoint.h" />
+    <ClInclude Include="ScaleEffect.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="ScoreInput.h" />
+    <ClInclude Include="ScoreScreen.h" />
+    <ClInclude Include="Screen.h" />
+    <ClInclude Include="ScrollMap.h" />
+    <ClInclude Include="sfdafx.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="FileManager.h" />
+    <ClInclude Include="Stage1Scene.h" />
+    <ClInclude Include="Stage2Scene.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TitleScene.h" />
+    <ClInclude Include="TopCannon.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Uill.h" />
+    <ClInclude Include="ItemInfo.h" />
+    <ClInclude Include="Volcano.h" />
+    <ClInclude Include="Water.h" />
+    <None Include="DXUT\Optional\directx.ico" />
+    <ClInclude Include="DXUT\Core\DXUT.h" />
+    <ClInclude Include="DXUT\Core\DXUTenum.h" />
+    <ClInclude Include="DXUT\Core\DXUTmisc.h" />
+    <ClCompile Include="DXUT\Core\DXUT.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTenum.cpp" />
+    <ClCompile Include="DXUT\Core\DXUTmisc.cpp" />
+    <ClInclude Include="DXUT\Optional\DXUTcamera.h" />
+    <ClInclude Include="DXUT\Optional\DXUTgui.h" />
+    <ClInclude Include="DXUT\Optional\DXUTres.h" />
+    <ClInclude Include="DXUT\Optional\DXUTsettingsdlg.h" />
+    <ClInclude Include="DXUT\Optional\SDKmesh.h" />
+    <ClInclude Include="DXUT\Optional\SDKmisc.h" />
+    <ClCompile Include="DXUT\Optional\DXUTcamera.cpp" />
+    <ClCompile Include="DXUT\Optional\DXUTgui.cpp" />
+    <ClCompile Include="DXUT\Optional\DXUTres.cpp" />
+    <ClCompile Include="DXUT\Optional\DXUTsettingsdlg.cpp" />
+    <ClCompile Include="DXUT\Optional\SDKmesh.cpp" />
+    <ClCompile Include="DXUT\Optional\SDKmisc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Maingame.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="TankGame03.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="resource.h" />
+    <ResourceCompile Include="TankGame03.rc" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
